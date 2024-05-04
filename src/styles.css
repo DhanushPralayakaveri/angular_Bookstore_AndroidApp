@@ -1,1 +1,51 @@
 /* You can add global styles to this file, and also import other style files */
+.container {
+  font-family: Arial, sans-serif;
+  background-color: #333; /* Dark background color */
+  color: #fff; /* Text color */
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  font-size: 28px;
+  margin: 0;
+  padding-bottom: 20px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.col-md-9 {
+  flex: 0 0 75%;
+}
+
+.col-md-3 {
+  flex: 0 0 25%;
+}
+body, html {
+  margin: 0;
+  padding: 0;
+  background-color: #333; /* Background color for the entire page */
+}
+
+::ng-deep * {
+
+  margin: 0;
+  padding: 1;
+
+}
+@media only screen and (max-width: 768px) {
+  .col-md-9 {
+    flex: 0 0 100%; /* Full width on smaller screens */
+  }
+
+  .col-md-3 {
+    flex: 0 0 100%; /* Full width on smaller screens */
+    margin-top: 20px; /* Add some spacing between columns */
+  }
+}
